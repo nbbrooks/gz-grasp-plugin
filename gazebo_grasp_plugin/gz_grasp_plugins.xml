@@ -1,0 +1,10 @@
+<library path="gz_grasp_system">
+  <class
+    name="g_grasp_system/GzGraspSystem"
+    type="gz_ros2_control::GazeboSimSystem"
+    base_class_type="gz_ros2_control::GazeboSimSystemInterface">
+    <description>
+      GazeboGripperFix
+    </description>
+  </class>
+</library>

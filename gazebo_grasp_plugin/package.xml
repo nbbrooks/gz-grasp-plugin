@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gz_grasp_system</name>
+  <version>1.0.0</version>
+  <description>Inspired by the Gazebo grasp fix plugin.</description>
+  <maintainer email="nathan@picknik.ai">Nathan Brooks</maintainer>
+  <author>Nathan Brooks</author>
+  <license>Apache 2</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ament_index_cpp</depend>
+  <!-- default version to use in official ROS2 packages is GAzebo Fortress for ROS2 Rolling -->
+  <depend condition="$GZ_VERSION == ''">ignition-gazebo6</depend>
+  <depend condition="$GZ_VERSION == fortress">ignition-gazebo6</depend>
+  <depend condition="$GZ_VERSION == garden">gz-sim7</depend>
+
+  <depend condition="$GZ_VERSION == ''">ignition-plugin</depend>
+  <depend condition="$GZ_VERSION == fortress">ignition-plugin</depend>
+  <depend condition="$GZ_VERSION == garden">gz-plugin2</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>yaml_cpp_vendor</depend>
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+      <build_type>ament_cmake</build_type>
+  </export>
+</package>
