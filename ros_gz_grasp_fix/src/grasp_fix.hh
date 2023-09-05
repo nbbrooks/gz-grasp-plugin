@@ -17,6 +17,7 @@ namespace ros_gz_grasp_fix
   class GraspFix:
   public ignition::gazebo::System,
   public ignition::gazebo::ISystemConfigure,
+  public ignition::gazebo::ISystemUpdate,
   public ignition::gazebo::ISystemPostUpdate
   {
     /// \brief Constructor
@@ -37,6 +38,13 @@ public:
       const std::shared_ptr < const sdf::Element > & _sdf,
       ignition::gazebo::EntityComponentManager & _ecm,
       ignition::gazebo::EventManager & _eventMgr) override;
+
+    // Documentation inherited
+
+public:
+    void Update(
+      const ignition::gazebo::UpdateInfo & _info,
+      ignition::gazebo::EntityComponentManager & _ecm) override;
 
     // Documentation inherited
 
