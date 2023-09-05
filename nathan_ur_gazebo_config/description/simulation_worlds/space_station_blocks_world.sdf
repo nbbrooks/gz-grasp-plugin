@@ -28,6 +28,13 @@
             name="ignition::gazebo::systems::ForceTorque">
     </plugin>
 
+
+    <plugin
+            filename="libRosGzGraspFix.so"
+            name="ros_gz_grasp_fix::GraspFix">
+    </plugin>
+
+
     <scene>
       <ambient>0.0 0.0 0.0 1.0</ambient>
       <shadows>0</shadows>
@@ -439,3 +446,4 @@
 
   </world>
 </sdf>
+

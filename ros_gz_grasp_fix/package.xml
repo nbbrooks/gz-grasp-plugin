@@ -1,0 +1,20 @@
+<package format="3">
+  <name>ros_gz_grasp_fix</name>
+  <version>0.1.0</version>
+  <description>Inspired by the Gazebo grasp fix plugin.</description>
+  <license>Proprietary</license>
+  <maintainer email="nathan@picknik.ai">Nathan Brooks</maintainer>
+  <author>Nathan Brooks</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ignition-gazebo6</depend>
+  <depend>rclcpp</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+      <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -191,16 +191,6 @@
   </gazebo>
 
   <gazebo>
-    <plugin filename="gz_grasp_system_plugin" name="gz_grasp_system::GzGraspSystem">
-      <!-- <parameters>$(find nathan_ur_gazebo_config)/config/control/picknik_ur5e.ros2_control.yaml</parameters>
-      <ros>
-        <remapping>/streaming_controller/commands:=/robot_controllers/commands</remapping>
-        <remapping>/joint_trajectory_controller/joint_trajectory:=/robot_controllers/joint_trajectory</remapping>
-      </ros> -->
-    </plugin>
-  </gazebo>
-
-  <gazebo>
     <plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
       <render_engine>${gazebo_renderer}</render_engine>
     </plugin>
